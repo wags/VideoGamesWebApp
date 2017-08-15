@@ -34,5 +34,30 @@ namespace WebApp.ApiControllers
         {
             return Ok(_videoGames);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            var videoGame = _videoGames
+                .Where(vg => vg.Id == id)
+                .SingleOrDefault();
+
+            // TODO return 404 if video game is not found
+
+            return Ok(videoGame);
+        }
+
+        [HttpPost]
+        public IActionResult Post(VideoGame videoGame)
+        {
+            // TODO set the Id value
+
+            if (videoGame != null)
+            {
+                _videoGames.Add(videoGame);
+            }
+
+            return Created($"/api/videogames/{videoGame.Id}", videoGame);
+        }
     }
 }
