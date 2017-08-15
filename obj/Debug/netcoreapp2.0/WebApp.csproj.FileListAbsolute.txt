@@ -1,0 +1,10 @@
+/Users/wags/source/LiveCoding/WebApp/bin/Debug/netcoreapp2.0/WebApp.deps.json
+/Users/wags/source/LiveCoding/WebApp/bin/Debug/netcoreapp2.0/WebApp.runtimeconfig.json
+/Users/wags/source/LiveCoding/WebApp/bin/Debug/netcoreapp2.0/WebApp.runtimeconfig.dev.json
+/Users/wags/source/LiveCoding/WebApp/bin/Debug/netcoreapp2.0/WebApp.dll
+/Users/wags/source/LiveCoding/WebApp/bin/Debug/netcoreapp2.0/WebApp.pdb
+/Users/wags/source/LiveCoding/WebApp/obj/Debug/netcoreapp2.0/WebApp.csproj.CoreCompileInputs.cache
+/Users/wags/source/LiveCoding/WebApp/obj/Debug/netcoreapp2.0/WebApp.AssemblyInfoInputs.cache
+/Users/wags/source/LiveCoding/WebApp/obj/Debug/netcoreapp2.0/WebApp.AssemblyInfo.cs
+/Users/wags/source/LiveCoding/WebApp/obj/Debug/netcoreapp2.0/WebApp.dll
+/Users/wags/source/LiveCoding/WebApp/obj/Debug/netcoreapp2.0/WebApp.pdb
