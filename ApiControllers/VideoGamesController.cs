@@ -8,8 +8,10 @@ using WebApp.Models;
 
 namespace WebApp.ApiControllers
 {
+    [Route("api/[controller]")]
     public class VideoGamesController : Controller
     {
+        [HttpGet]
         public IActionResult Get()
         {
             var videoGames = new List<VideoGame>()
@@ -19,7 +21,7 @@ namespace WebApp.ApiControllers
                    Id = 1,
                    Title = "Super Mario 64",
                    PublishedOn = new DateTime(1996, 1, 1),
-                   Platform = ""
+                   Platform = "N64"
                 },
                 new VideoGame()
                 {
