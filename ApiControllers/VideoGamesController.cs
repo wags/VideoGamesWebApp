@@ -48,7 +48,7 @@ namespace WebApp.ApiControllers
         }
 
         [HttpPost]
-        public IActionResult Post(VideoGame videoGame)
+        public IActionResult Post([FromBody] VideoGame videoGame)
         {
             // TODO set the Id value
 
