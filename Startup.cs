@@ -36,8 +36,8 @@ namespace WebApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles();
             app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
