@@ -21,6 +21,9 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Enable CORS
+            services.AddCors();
+
             services.AddMvc();
         }
 
@@ -38,6 +41,9 @@ namespace WebApp
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:4200"));
 
             app.UseMvc(routes =>
             {
