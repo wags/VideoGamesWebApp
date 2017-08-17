@@ -37,6 +37,7 @@ namespace WebApp
             }
 
             app.UseStaticFiles();
+            app.UseDefaultFiles();
 
             app.UseMvc(routes =>
             {
