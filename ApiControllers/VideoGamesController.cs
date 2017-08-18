@@ -26,6 +26,13 @@ namespace WebApp.ApiControllers
                 Title = "Resident Evil",
                 PublishedOn = new DateTime(1994, 1, 1),
                 Platform = "Playstation"
+            },
+            new VideoGame()
+            {
+                Id = 3,
+                Title = "Halo",
+                PublishedOn = new DateTime(2000, 1, 1),
+                Platform = "Xbox"
             }
         };
 
