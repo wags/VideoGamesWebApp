@@ -50,6 +50,10 @@ namespace WebApp.ApiControllers
                 .SingleOrDefault();
 
             // TODO return 404 if video game is not found
+            if (videoGame == null)
+            {
+                return NotFound();
+            }
 
             return Ok(videoGame);
         }
