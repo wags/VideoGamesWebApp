@@ -61,12 +61,15 @@ namespace WebApp.ApiControllers
         [HttpPost]
         public IActionResult Post([FromBody] VideoGame videoGame)
         {
-            // TODO set the Id value
-
-            if (videoGame != null)
+            if (videoGame == null)
             {
-                _videoGames.Add(videoGame);
+                return BadRequest();
             }
+
+            // HACK Set the Id value
+            videoGame.Id = _videoGames.Count + 1;
+
+            _videoGames.Add(videoGame);
 
             return Created($"/api/videogames/{videoGame.Id}", videoGame);
         }
