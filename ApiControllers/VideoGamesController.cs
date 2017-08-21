@@ -18,21 +18,21 @@ namespace WebApp.ApiControllers
                 Id = 1,
                 Title = "Super Mario 64",
                 PublishedOn = new DateTime(1996, 1, 1),
-                Platform = "N64"
+                PlatformId = 1
             },
             new VideoGame()
             {
                 Id = 2,
                 Title = "Resident Evil",
                 PublishedOn = new DateTime(1994, 1, 1),
-                Platform = "Playstation"
+                PlatformId = 6
             },
             new VideoGame()
             {
                 Id = 3,
                 Title = "Halo",
                 PublishedOn = new DateTime(2000, 1, 1),
-                Platform = "Xbox"
+                PlatformId = 10
             }
         };
 
