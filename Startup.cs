@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using WebApp.Data;
 
 namespace WebApp
@@ -31,7 +32,10 @@ namespace WebApp
             // Enable CORS
             services.AddCors();
 
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(options =>
+                    options.SerializerSettings.ReferenceLoopHandling =
+                    ReferenceLoopHandling.Ignore);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
