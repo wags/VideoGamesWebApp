@@ -8,6 +8,8 @@ namespace WebApp.Data
     {
         public static void Initialize(this Context context)
         {
+            context.Database.EnsureCreated();
+
             var platform1 = new Platform() { Id = 2, Name = "GameCube" };
             var platform2 = new Platform() { Id = 3, Name = "Wii" };
             var platform3 = new Platform() { Id = 1, Name = "N64" };
