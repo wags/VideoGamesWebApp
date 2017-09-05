@@ -10,9 +10,9 @@ namespace WebApp.Data
         {
             context.Database.EnsureCreated();
 
-            var platform1 = new Platform() { Id = 2, Name = "GameCube" };
-            var platform2 = new Platform() { Id = 3, Name = "Wii" };
-            var platform3 = new Platform() { Id = 1, Name = "N64" };
+            var platform1 = new Platform() { Id = 1, Name = "N64" };
+            var platform2 = new Platform() { Id = 2, Name = "GameCube" };
+            var platform3 = new Platform() { Id = 3, Name = "Wii" };
             var platform4 = new Platform() { Id = 4, Name = "Wii U" };
             var platform5 = new Platform() { Id = 5, Name = "Switch" };
             var platform6 = new Platform() { Id = 6, Name = "PlayStation" };
